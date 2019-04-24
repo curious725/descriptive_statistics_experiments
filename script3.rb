@@ -1,0 +1,7 @@
+require 'descriptive_statistics'
+
+data = [2,6,9,3,5,1,8,3,6,9,2]
+data.extend(DescriptiveStatistics)
+puts data.sum
+puts data.method(:sum).source_location
+puts [].method(:sum).source_location
